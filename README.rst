@@ -12,11 +12,15 @@ ______________
 >>> import paperrockscissor
 >>> paperrockscissor.challenge('paper', 'rock')
 
+>>> import paperrockscissor
+>>> paperrockscissor.challenge(
+        paperrockscissor.PAPER,
+        paperrockscissor.ROCK)
 
->>> paperrockscissor.challenge(paperrockscissor.PAPER, paperrockscissor.ROCK)
-
-
->>> paperrockscissor.challenge(paperrockscissor.get_random_choice(), paperrockscissor.get_random_choice())
+>>> import paperrockscissor
+>>> paperrockscissor.challenge(
+        paperrockscissor.get_random_choice(),
+        paperrockscissor.get_random_choice())
 
 
 Example program:
