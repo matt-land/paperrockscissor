@@ -1,5 +1,9 @@
 from setuptools import setup
 
+def readme():
+    with open('README.rst') as f:
+        return f.read()
+
 setup(
     name='paperrockscissor',
     version='0.1',
@@ -14,6 +18,8 @@ setup(
         'console_scripts': [
             'command_line = paperrockscissors:command_line',
         ]
-    }
+    },
+    test_suite='nose.collector',
+    tests_require=['nose'],
 
 )
