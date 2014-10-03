@@ -14,38 +14,36 @@ CHOICES = [ PAPER, ROCK, SCISSOR ]
 def get_random_choice():
     return random.choice(CHOICES)
 
-def challenge(player1, player2):
+def challenge(player1val, player2val):
     """
-    :param player1: string
-    :param player2: string
+    :param player1val: string
+    :param player2val: string
     :return:
     """
-    # if player1 is not ROCK:
-    #     print (type(ROCK))
-    #     print (type(player1))
-    #     exit(player1 + ' is not ' + ROCK)
-    if not (player1 == PAPER or player1 == ROCK or player1 == SCISSOR):
+    #guardians, because return early...
+    if not player1val in CHOICES:
         raise Exception('invalid input ' + PLAYER1)
-    if not (player2 == PAPER or player2 == ROCK or player2 == SCISSOR):
+    if not player2val  in CHOICES:
          raise Exception('invalid input ' + PLAYER2)
-    if player1 is PAPER:
-        if player2 is PAPER:
+    
+    if player1val is PAPER:
+        if player2val is PAPER:
             return TIE
-        elif player2 is ROCK:
+        elif player2val is ROCK:
             return PLAYER1
         else:
             return PLAYER2
-    elif player1 is ROCK:
-        if player2 is PAPER:
+    elif player1val is ROCK:
+        if player2val is PAPER:
             return PLAYER2
-        elif player2 is ROCK:
+        elif player2val is ROCK:
             return TIE
         else:
             return PLAYER1
     else:
-        if player2 is PAPER:
+        if player2val is PAPER:
             return PLAYER1
-        elif player2 is ROCK:
+        elif player2val is ROCK:
             return PLAYER2
         else:
             return TIE
