@@ -7,9 +7,5 @@ to use::
 
 import paperrockscissor
 
-
 paperrockscissor.challenge('paper', 'rock')
 
-
-@todo
-Add unit testing
