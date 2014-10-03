@@ -2,8 +2,11 @@ paperrockscissor
 -----------------
 
 This is an exercise in making a python module, learning python and unit testing
+The exercise can be found here:
+https://github.com/sheilatron/shiny_code_quest
 
-to use::
+
+To use paperrockscissor::
 
 import paperrockscissor
 
