@@ -1,4 +1,4 @@
-__author__ = 'blitzcat'
+__author__ = 'matt-land'
 from unittest import TestCase
 
 import paperrockscissor

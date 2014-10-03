@@ -1,5 +1,5 @@
 import random
-__author__ = 'blitzcat'
+__author__ = 'matt-land'
 
 PAPER = 'paper'
 ROCK = 'rock'

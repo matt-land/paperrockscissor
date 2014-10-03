@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-__author__ = 'blitzcat'
+__author__ = 'matt-land'
 
 import paperrockscissor
 

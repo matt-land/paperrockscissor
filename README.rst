@@ -10,7 +10,6 @@ This will compare two inputs from the classic paper rock scissor game, and retur
 Example usage:
 ______________
 >>> import paperrockscissor
-
 >>> paperrockscissor.challenge('paper', 'rock')
 
 
@@ -19,3 +18,7 @@ ______________
 
 >>> paperrockscissor.challenge(paperrockscissor.get_random_choice(), paperrockscissor.get_random_choice())
 
+
+Example program:
+________________
+(bash-prompt)$ ./paperrockscissor/command_line.py
