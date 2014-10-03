@@ -11,8 +11,10 @@ TIE = 'tie'
 
 CHOICES = [PAPER, ROCK, SCISSOR]
 
+
 def get_random_choice():
     return random.choice(CHOICES)
+
 
 def challenge(player1val, player2val):
     """
@@ -20,10 +22,10 @@ def challenge(player1val, player2val):
     :param player2val: string
     :return:
     """
-    #guardians, because return early...
-    if not player1val in CHOICES:
+    # guardians, because return early...
+    if player1val not in CHOICES:
         raise Exception('invalid input ' + PLAYER1)
-    if not player2val in CHOICES:
+    if player2val not in CHOICES:
         raise Exception('invalid input ' + PLAYER2)
 
     if player1val is player2val:
