@@ -9,5 +9,11 @@ setup(
     author_email='mwfrankland@gmail.com',
     license='MIT',
     packages=['paperrockscissor'],
-    zip_safe=False
+    zip_safe=False,
+    entry_points={
+        'console_scripts': [
+            'command_line = paperrockscissors:command_line',
+        ]
+    }
+
 )
